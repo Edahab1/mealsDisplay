@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>JavaScript Project</title>
+  </head>
+  <body>
+    <!-- Side menu section -->
+    <div class="side-nav position-fixed">
+      <div
+        class="menu-bar text-white d-flex flex-column justify-content-between p-4"
+      >
+        <div class="links">
+          <ul>
+            <li id="searchLink">Search</li>
+            <li id="category">Categories</li>
+            <li id="area">Area</li>
+            <li id="ingredient">Ingredients</li>
+            <li id="contact">Contact Us</li>
+          </ul>
+        </div>
+        <div class="menu-bottom">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+          </div>
+          <div class="copyright">
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="aside-navbar d-flex justify-content-between flex-column align-items-center bg-white"
+      >
+        <img
+          src="./logo.png"
+          class="w-100 logo"
+          style="cursor: pointer"
+          alt="logo-image"
+        />
+        <i class="menu-icon fa-solid fa-bars fs-2"></i>
+        <i class="close fa-solid fa-xmark fs-2 d-none"></i>
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- display container section -->
+    <main>
+      <div class="container">
+        <div id="DisplayRow" class="row min-vh-100 g-3 pt-5">
+          <div id="displayDetails"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="search" class="search container"></div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

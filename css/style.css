@@ -1,0 +1,106 @@
+:root {
+  --menubar-width: 255px; /* max width = 255px */
+}
+
+body {
+  background-color: black;
+}
+
+.side-nav {
+  z-index: 999;
+}
+
+.aside-navbar {
+  background-color: white;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  transition: all 0.4s ease;
+}
+
+.aside-navbar i {
+  cursor: pointer;
+}
+
+.menu-bar {
+  background-color: black;
+  width: 255px;
+  position: relative;
+  margin-top: 25px;
+  left: -255px;
+  min-height: 100vh;
+  height: inherit;
+  transition: all 0.4s ease;
+}
+
+.menu-bar .links ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.menu-bar .links ul li {
+  margin-bottom: 20px;
+  margin-left: -30px;
+  position: relative;
+  top: 150px;
+  cursor: pointer;
+}
+
+.meal {
+  border-radius: 5px;
+}
+
+.meal-overlay, .category-overlay {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: top 0.5s ease-in-out;
+  background-color: rgba(240, 248, 255, 0.8);
+  cursor: pointer;
+}
+
+.meal:hover .meal-overlay, .meal:hover .category-overlay {
+  top: 0;
+}
+
+/* search section */
+.form-control {
+  color: white;
+  background-color: transparent;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.not-found {
+  text-align: center;
+  position: relative;
+  top: 250px;
+  font-size: 24px;
+}
+
+.categories{
+  background-color: rgba(218, 167, 167, 0.896);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ingredients{
+  cursor: pointer;
+}
+
+form .error{
+  color: red;
+}
